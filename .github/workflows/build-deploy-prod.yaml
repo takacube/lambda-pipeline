@@ -16,6 +16,7 @@ jobs:
           aws-region: ap-northeast-1
       # sam build
       - run: cd src && npm install
+      - run: npm install -g esbuild
       - run: sam build --beta-features
 
 # Run Unit tests- Specify unit tests here 
